@@ -1,0 +1,11 @@
+﻿<engine>
+  <template selector="#content .result">
+    <ul>
+      {for item in Items}
+      <li>
+        ${item.Name}
+      </li>
+      {/for}
+    </ul>
+  </template>
+</engine>

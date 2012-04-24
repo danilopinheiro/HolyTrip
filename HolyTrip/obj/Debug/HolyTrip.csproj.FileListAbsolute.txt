@@ -1,0 +1,7 @@
+C:\Users\danilo.pinheiro\documents\visual studio 2010\Projects\HolyTrip\HolyTrip\bin\HolyTrip.dll
+C:\Users\danilo.pinheiro\documents\visual studio 2010\Projects\HolyTrip\HolyTrip\bin\HolyTrip.pdb
+C:\Users\danilo.pinheiro\documents\visual studio 2010\Projects\HolyTrip\HolyTrip\bin\EntityFramework.dll
+C:\Users\danilo.pinheiro\documents\visual studio 2010\Projects\HolyTrip\HolyTrip\bin\EntityFramework.xml
+C:\Users\danilo.pinheiro\documents\visual studio 2010\Projects\HolyTrip\HolyTrip\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\danilo.pinheiro\documents\visual studio 2010\Projects\HolyTrip\HolyTrip\obj\Debug\HolyTrip.dll
+C:\Users\danilo.pinheiro\documents\visual studio 2010\Projects\HolyTrip\HolyTrip\obj\Debug\HolyTrip.pdb

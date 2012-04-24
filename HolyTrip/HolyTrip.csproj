@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4174FE1A-FBF4-4C34-9EC1-6546D31BDE29}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HolyTrip</RootNamespace>
+    <AssemblyName>HolyTrip</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\PeopleModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\peopleReturn.xml" />
+    <Content Include="Content\holy\datatable\imgs\asc.gif" />
+    <Content Include="Content\holy\datatable\imgs\buttons\btdisable.png" />
+    <Content Include="Content\holy\datatable\imgs\buttons\btenable.png" />
+    <Content Include="Content\holy\datatable\imgs\desc.gif" />
+    <Content Include="Content\holy\datatable\imgs\gradient-bg.png" />
+    <Content Include="Content\holy\datatable\jquery.datatable.css" />
+    <Content Include="Content\holy\datatable\jquery.datatable.js" />
+    <Content Include="Content\holy\datatable\jquery.datatable.min.css" />
+    <Content Include="Content\holy\datatable\jquery.datatable.min.js" />
+    <Content Include="Content\holy\dropdown\jquery.dropdown.css" />
+    <Content Include="Content\holy\dropdown\jquery.dropdown.js" />
+    <Content Include="Content\holy\dropdown\jquery.dropdown.min.css" />
+    <Content Include="Content\holy\dropdown\jquery.dropdown.min.js" />
+    <Content Include="Content\holy\forms\imgs\buttons\btadd.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btback.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btcancel.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btclear.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btconfig.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btconfirm.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btdisable.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btdocadd.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btdownload.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btedit.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btenable.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btexcel.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btexport.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btfilter.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\bthelp.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btlogout.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btmap.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btnewdoc.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btnext.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btpdf.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btpowerpoint.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btrefresh.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btremove.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btrename.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btsave.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btsearch.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btsend.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btupload.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btuser.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btview.png" />
+    <Content Include="Content\holy\forms\imgs\buttons\btwait.png" />
+    <Content Include="Content\holy\forms\imgs\picklist-arrow.png" />
+    <Content Include="Content\holy\forms\jquery.forms.css" />
+    <Content Include="Content\holy\forms\jquery.forms.js" />
+    <Content Include="Content\holy\forms\jquery.forms.min.css" />
+    <Content Include="Content\holy\forms\jquery.forms.min.js" />
+    <Content Include="Content\holy\lib\jquery.ajaxmodulator.js" />
+    <Content Include="Content\holy\lib\jquery.ajaxmodulator.min.js" />
+    <Content Include="Content\holy\lib\jquery.ba-hashchange.min.js" />
+    <Content Include="Content\holy\lib\jquery.cookie.js" />
+    <Content Include="Content\holy\lib\jquery.cookie.min.js" />
+    <Content Include="Content\holy\lib\jquery.holyavenger.js" />
+    <Content Include="Content\holy\lib\jquery.holyavenger.min.js" />
+    <Content Include="Content\holy\lib\jquery.holyavenger.trimpath.js" />
+    <Content Include="Content\holy\lib\jquery.holyavenger.trimpath.min.js" />
+    <Content Include="Content\holy\lib\jquery.holycomponents.js" />
+    <Content Include="Content\holy\lib\jquery.holycomponents.min.js" />
+    <Content Include="Content\holy\lib\jquery.js" />
+    <Content Include="Content\holy\lib\jquery.loadtext.js" />
+    <Content Include="Content\holy\lib\jquery.loadtext.min.js" />
+    <Content Include="Content\holy\lib\jquery.min.js" />
+    <Content Include="Content\holy\lib\jquery.xml.js" />
+    <Content Include="Content\holy\lib\jquery.xml.min.js" />
+    <Content Include="Content\holy\lib\snippet\jquery.snippet.css" />
+    <Content Include="Content\holy\lib\snippet\jquery.snippet.js" />
+    <Content Include="Content\holy\lib\snippet\jquery.snippet.min.css" />
+    <Content Include="Content\holy\lib\snippet\jquery.snippet.min.js" />
+    <Content Include="Content\holy\lib\trimpath.js" />
+    <Content Include="Content\holy\lib\trimpath.min.js" />
+    <Content Include="Content\holy\loading\imgs\load.gif" />
+    <Content Include="Content\holy\loading\jquery.loading.css" />
+    <Content Include="Content\holy\loading\jquery.loading.js" />
+    <Content Include="Content\holy\loading\jquery.loading.min.css" />
+    <Content Include="Content\holy\loading\jquery.loading.min.js" />
+    <Content Include="Content\holy\message\imgs\error.png" />
+    <Content Include="Content\holy\message\imgs\info.png" />
+    <Content Include="Content\holy\message\imgs\success.png" />
+    <Content Include="Content\holy\message\imgs\warning.png" />
+    <Content Include="Content\holy\message\jquery.message.css" />
+    <Content Include="Content\holy\message\jquery.message.js" />
+    <Content Include="Content\holy\message\jquery.message.min.css" />
+    <Content Include="Content\holy\message\jquery.message.min.js" />
+    <Content Include="Content\holy\navigation\demo\dropdown.html" />
+    <Content Include="Content\holy\navigation\demo\tabpanel.html" />
+    <Content Include="Content\holy\navigation\demo\togglepanel.html" />
+    <Content Include="Content\holy\navigation\jquery.navigation.css" />
+    <Content Include="Content\holy\navigation\jquery.navigation.js" />
+    <Content Include="Content\holy\navigation\jquery.navigation.min.css" />
+    <Content Include="Content\holy\navigation\jquery.navigation.min.js" />
+    <Content Include="Content\holy\sendformbyframe\jquery.sendformbyframe.js" />
+    <Content Include="Content\holy\sendformbyframe\jquery.sendformbyframe.min.js" />
+    <Content Include="Content\holy\sortchildren\jquery.sortchildren.js" />
+    <Content Include="Content\holy\sortchildren\jquery.sortchildren.min.js" />
+    <Content Include="Content\holy\tabpanel\jquery.tabpanel.css" />
+    <Content Include="Content\holy\tabpanel\jquery.tabpanel.js" />
+    <Content Include="Content\holy\tabpanel\jquery.tabpanel.min.css" />
+    <Content Include="Content\holy\tabpanel\jquery.tabpanel.min.js" />
+    <Content Include="Content\holy\themes\liquidblue\base.css" />
+    <Content Include="Content\holy\themes\liquidblue\base.min.css" />
+    <Content Include="Content\holy\themes\liquidblue\components.css" />
+    <Content Include="Content\holy\themes\liquidblue\components.min.css" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\arrow_close.gif" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\arrow_open.gif" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\asc.gif" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btadd.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btback.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btcancel.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btclear.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btconfig.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btconfirm.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btdisable.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btdocadd.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btdownload.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btedit.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btenable.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btexcel.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btexport.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btfilter.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\bthelp.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btlogout.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btmap.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btnewdoc.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btnext.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btpdf.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btpowerpoint.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btrefresh.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btremove.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btrename.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btsave.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btsearch.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btsend.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btupload.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btuser.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btview.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\buttons\btwait.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\desc.gif" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\favicon.ico" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\gradient-bg.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\load.gif" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\load_16x16.gif" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\logo.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\msg\error.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\msg\info.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\msg\success.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\msg\warning.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\navbar.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\picklist-arrow.png" />
+    <Content Include="Content\holy\themes\liquidblue\imgs\screenshot.gif" />
+    <Content Include="Content\holy\themes\reset.css" />
+    <Content Include="Content\holy\themes\reset.min.css" />
+    <Content Include="Content\holy\themes\simple\base.css" />
+    <Content Include="Content\holy\themes\simple\base.min.css" />
+    <Content Include="Content\holy\themes\simple\components.css" />
+    <Content Include="Content\holy\themes\simple\components.min.css" />
+    <Content Include="Content\holy\themes\simple\fb.css" />
+    <Content Include="Content\holy\themes\simple\fb.min.css" />
+    <Content Include="Content\holy\themes\simple\holy.css" />
+    <Content Include="Content\holy\themes\simple\holy.min.css" />
+    <Content Include="Content\holy\themes\simple\imgs\arrow_close.gif" />
+    <Content Include="Content\holy\themes\simple\imgs\arrow_open.gif" />
+    <Content Include="Content\holy\themes\simple\imgs\asc.gif" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btadd.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btback.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btcancel.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btclear.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btconfig.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btconfirm.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btdisable.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btdocadd.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btdownload.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btedit.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btenable.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btexcel.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btexport.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btfilter.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\bthelp.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btlogout.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btmap.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btnewdoc.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btnext.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btpdf.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btpowerpoint.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btrefresh.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btremove.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btrename.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btsave.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btsearch.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btsend.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btupload.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btuser.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btview.png" />
+    <Content Include="Content\holy\themes\simple\imgs\buttons\btwait.png" />
+    <Content Include="Content\holy\themes\simple\imgs\desc.gif" />
+    <Content Include="Content\holy\themes\simple\imgs\favicon.ico" />
+    <Content Include="Content\holy\themes\simple\imgs\gradient-bg.png" />
+    <Content Include="Content\holy\themes\simple\imgs\load.gif" />
+    <Content Include="Content\holy\themes\simple\imgs\load_16x16.gif" />
+    <Content Include="Content\holy\themes\simple\imgs\logo.png" />
+    <Content Include="Content\holy\themes\simple\imgs\msg\error.png" />
+    <Content Include="Content\holy\themes\simple\imgs\msg\info.png" />
+    <Content Include="Content\holy\themes\simple\imgs\msg\success.png" />
+    <Content Include="Content\holy\themes\simple\imgs\msg\warning.png" />
+    <Content Include="Content\holy\themes\simple\imgs\navbar.png" />
+    <Content Include="Content\holy\themes\simple\imgs\screenshot.gif" />
+    <Content Include="Content\holy\third\datepicker\jquery.datepicker.css" />
+    <Content Include="Content\holy\third\datepicker\jquery.datepicker.min.css" />
+    <Content Include="Content\holy\third\jquery.meio.mask.js" />
+    <Content Include="Content\holy\third\jquery.meio.mask.min.js" />
+    <Content Include="Content\holy\third\jquery.snippetsource.js" />
+    <Content Include="Content\holy\third\jquery.snippetsource.min.js" />
+    <Content Include="Content\holy\third\jquery.tablescroll.js" />
+    <Content Include="Content\holy\third\jquery.tablescroll.min.js" />
+    <Content Include="Content\holy\third\nicedit\icons.gif" />
+    <Content Include="Content\holy\third\nicedit\nicedit.js" />
+    <Content Include="Content\holy\third\nicedit\nicedit.min.js" />
+    <Content Include="Content\holy\third\tooltip.tipsy\jquery.tipsy.css" />
+    <Content Include="Content\holy\third\tooltip.tipsy\jquery.tipsy.js" />
+    <Content Include="Content\holy\third\tooltip.tipsy\jquery.tipsy.min.css" />
+    <Content Include="Content\holy\third\tooltip.tipsy\jquery.tipsy.min.js" />
+    <Content Include="Content\holy\togglepanel\imgs\arrow_close.gif" />
+    <Content Include="Content\holy\togglepanel\imgs\arrow_open.gif" />
+    <Content Include="Content\holy\togglepanel\jquery.togglepanel.css" />
+    <Content Include="Content\holy\togglepanel\jquery.togglepanel.js" />
+    <Content Include="Content\holy\togglepanel\jquery.togglepanel.min.css" />
+    <Content Include="Content\holy\togglepanel\jquery.togglepanel.min.js" />
+    <Content Include="Content\holy\xdialog\jquery.xdialog.css" />
+    <Content Include="Content\holy\xdialog\jquery.xdialog.js" />
+    <Content Include="Content\holy\xdialog\jquery.xdialog.min.css" />
+    <Content Include="Content\holy\xdialog\jquery.xdialog.min.js" />
+    <Content Include="Content\holy\youtubetip\jquery.youtubetip.css" />
+    <Content Include="Content\holy\youtubetip\jquery.youtubetip.js" />
+    <Content Include="Content\holy\youtubetip\jquery.youtubetip.min.css" />
+    <Content Include="Content\holy\youtubetip\jquery.youtubetip.min.js" />
+    <Content Include="Content\jquery.holyavenger.trimpath.js" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\trimpath.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1154</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

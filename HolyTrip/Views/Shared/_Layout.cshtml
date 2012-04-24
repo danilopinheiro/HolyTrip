@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/holy/themes/reset.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Content/holy/lib/jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/holy/lib/jquery.holycomponents.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/holy/lib/trimpath.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/holy/lib/jquery.holyavenger.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Content/holy/lib/jquery.holyavenger.trimpath.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/holy/loading/jquery.loading.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/holy/message/jquery.message.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/holy/forms/jquery.forms.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/holy/themes/simple/base.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/holy/themes/simple/components.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/holy/themes/simple/holy.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.local-trimpath').click(function () {
+                $('#content .result').trimpath('Hello World local: ${nome}', { nome: 'teste' });
+            });
+            $('.remote-trimpath').click(function () {
+                var people = {};
+                $.get(
+                    '/Home/People', 
+                    people,
+                    function (data) {
+                        $.holy("@Url.Content("~/Content/peopleReturn.xml")", data);
+                    }
+                );
+            });
+        });
+    </script>
+</head>
+<body class="simpleTheme">
+    <div id="wrapper">
+        <div id="header" class="strongbox">
+            <h1>
+                <a href="http://holy.dextra-sw.com">Holy <span class="detail">the best way to start
+                    your project!</span></a>
+            </h1>
+            <div class="navigation">
+            </div>
+        </div>
+        <ul class="message">
+        </ul>
+        <div id="content">
+            @RenderBody()
+            <div class="result">
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+</body>
+</html>
